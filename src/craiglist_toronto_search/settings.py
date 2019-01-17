@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'corsheaders',
     'django_extensions',
+    'django-dia',
     # Disable Django's own staticfiles handling in favour of WhiteNoise, for
     # greater consistency between gunicorn and `./manage.py runserver`. See:
     # http://whitenoise.evans.io/en/stable/django.html#using-whitenoise-in-development
@@ -144,6 +145,11 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(PROJECT_ROOT, 'static'),
 ]
+
+GRAPH_MODELS = {
+  'all_applications': True,
+  'group_models': True,
+}
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
