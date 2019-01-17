@@ -7,8 +7,8 @@ This website is completely written in python, with the page view in HTML (of cou
 
 ## Return value
 
-JSON Format. Maybe in the future we will also output in different formats, maybe even as text. However, we have to be careful not to go against any terms of conditions for craigslist.
+JSON Object. Maybe in the future we will also output in different formats, maybe even as text. However, we have to be careful not to go against any terms of conditions for craigslist.
 
 ## Testing
 
-To be done.
+Some tests are done. More to be added.

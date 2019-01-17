@@ -1,3 +1,8 @@
+"""
+Creates the form that we display on our website.
+This is the format of the text we take in.
+"""
+
 from django import forms
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Submit
@@ -5,6 +10,7 @@ from crispy_forms.layout import Layout, Submit
 
 class QueryForm(forms.Form):
     search = forms.CharField()
+    # given from craigslist website
     category = forms.ChoiceField(choices=[
         ('sss', 'for sale'),
         ('hhh', 'housing'),
@@ -20,6 +26,7 @@ class QueryForm(forms.Form):
         self.helper = FormHelper
         self.helper.form_method = 'post'
 
+        # submit button is bootstrap css
         self.helper.layout = Layout(
             'search',
             'category',
