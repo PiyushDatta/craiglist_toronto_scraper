@@ -40,7 +40,8 @@ class Command(BaseCommand):
         if query is None:
             raise KeyError("Please input a query")
         else:
-            base_url = "https://toronto.craigslist.org/search/" + category + "?query=" + query + "&sort=rel"
+            query_string = query.replace(" ", "+")
+            base_url = "https://toronto.craigslist.org/search/" + category + "?query=" + query_string + "&sort=rel"
             main_list = []
             soup = None
             with urllib.request.urlopen(base_url) as url:
