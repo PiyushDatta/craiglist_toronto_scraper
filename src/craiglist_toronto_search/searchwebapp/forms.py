@@ -8,11 +8,15 @@ class QueryForm(forms.Form):
     category = forms.ChoiceField(choices=[
         ('sss', 'for sale'),
         ('hhh', 'housing'),
+        ('ccc', 'community'),
+        ('bbb', 'services'),
+        ('jjj', 'jobs'),
+        ('ggg', 'gigs'),
+        ('rrr', 'resumes'),
     ])
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-
         self.helper = FormHelper
         self.helper.form_method = 'post'
 

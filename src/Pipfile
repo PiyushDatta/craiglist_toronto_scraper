@@ -20,6 +20,8 @@ django-cors-headers = "*"
 dj_database_url = "*"
 django-crispy-forms = "*"
 progress = "*"
+beautifulsoup4 = "*"
+urllib3 = "*"
 
 
 [dev-packages]
