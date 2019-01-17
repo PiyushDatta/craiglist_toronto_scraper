@@ -34,13 +34,13 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'craiglist_toronto_search.searchwebapp',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'craiglist_toronto_search.searchwebapp',
     'crispy_forms',
     'corsheaders',
     # Disable Django's own staticfiles handling in favour of WhiteNoise, for
