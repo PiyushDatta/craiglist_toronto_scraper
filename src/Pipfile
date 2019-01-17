@@ -25,4 +25,14 @@ urllib3 = "*"
 
 
 [dev-packages]
+"psycopg2-binary" = "*"
+django-heroku = "*"
+gunicorn = "*"
+djangorestframework = "*"
+django-cors-headers = "*"
+dj_database_url = "*"
+django-crispy-forms = "*"
+progress = "*"
+beautifulsoup4 = "*"
+urllib3 = "*"
 
