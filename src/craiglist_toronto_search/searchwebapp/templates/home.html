@@ -1,19 +1,15 @@
 <!DOCTYPE html>
+{% load crispy_forms_tags %}
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Craigslist Search</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Craigslist Scraper</title>
 </head>
-<body class="body" style="background-color:#f6f6f6">
-<div>
-    {% block content %}
-    <form>
-        <input type="text" name="info"><br>
-        <input type="submit" value="Submit">
-    </form>
 
-    <p> Still on home page.</p>
-    {% endblock %}
-</div>
+<body style="padding: 30px;">
+{% crispy form form.helper %}
 </body>
 </html>
