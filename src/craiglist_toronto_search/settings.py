@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'craiglist_toronto_search.searchwebapp',
     'crispy_forms',
     'corsheaders',
+    'django_extensions',
     # Disable Django's own staticfiles handling in favour of WhiteNoise, for
     # greater consistency between gunicorn and `./manage.py runserver`. See:
     # http://whitenoise.evans.io/en/stable/django.html#using-whitenoise-in-development
